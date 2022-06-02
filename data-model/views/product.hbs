@@ -1,0 +1,27 @@
+<h2>All products</h2>
+<div class="products">
+    {{#if products}}
+    <div class="row">
+        {{#each products}}
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{img}}" alt="{{img}}">
+                    <span class=" card-title">{{type}}</span>
+                </div>
+                <div class="card-content">
+                    <p>{{year}}</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{else}}
+    <h2>There is not any product yet</h2>
+    {{/if}}
+</div>
+
+<a href="addProducts">Add product</a>
